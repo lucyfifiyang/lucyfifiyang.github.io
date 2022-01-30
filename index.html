@@ -206,6 +206,7 @@
 
             </div>
             <div class="row text-center">
+                <h4>Drag and drop the nodes to see how they connect!</h4>
                 <div id="node-graph"></div>
             </div>
 
@@ -232,7 +233,7 @@
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
                     <h1>My Story</h1>
-                    <h3><p>March 2020. A world shutting down. A twice-forwarded email pleaded my department for COVID-19 testing volunteers. Despite just passing the bioengineering PhD qualification exam, I could not sit tight and watch a public health train wreck unfold without doing something. I answered the call. The evening of my exam, I biked over to UW Medical Center to join the Specimen Processing Services and prepare COVID-19 samples for testing. Foege may be closed, but I returned to work, one swab at a time! [summary of experience at SPS, 4-5 sentences.] [DISCOVERY MINDSET: I learned new things that I could take to my research.] [slowly transitioned to researching part time in lab as well, and the investigation required me to return to Foege for full-time work.]</p>
+                    <h3><p>very cheese... March 2020. A world shutting down. A twice-forwarded email pleaded my department for COVID-19 testing volunteers. Despite just passing the bioengineering PhD qualification exam, I could not sit tight and watch a public health train wreck unfold without doing something. I answered the call. The evening of my exam, I biked over to UW Medical Center to join the Specimen Processing Services and prepare COVID-19 samples for testing. Foege may be closed, but I returned to work, one swab at a time! [summary of experience at SPS, 4-5 sentences.] [DISCOVERY MINDSET: I learned new things that I could take to my research.] [slowly transitioned to researching part time in lab as well, and the investigation required me to return to Foege for full-time work.]</p>
                     <p>[aptamers that bind the spike protein of SARS-CoV-2, the virus that causes COVID-19… basic summary explaining the idea] [manuscript published] [chosen to present the work at a conference] [current directions: rapid test, what it does, advantages it could bring] All the while, I took under my wing a then-sophomore, Joey, to help support my work. [mentoring challenges, things I learned, good points?]</p>
                     <p>Just as I mentored Joey at the bench, I also trained Camille, a current junior at UW, as my shop assistant for my online store. [explain the store I created from scratch, what we make] [inclusivity, we are both young LGBT women in a field primarily dominated by men?]</p>
                     <p>The online store helps fund my little brother’s husky experience. Robin is a senior at UW … Pay for his housing and every grocery trip and food outing we have together to give him the freedom to choose his own future, reduce any student debt that may weigh his choice of future directions, shield him from "tiger mom” judgement on his choice of major and career.
@@ -278,8 +279,8 @@
     <script src="assets/js/custom.js"></script>
 
 <script>
-  var width = 1200,
-      height = 1000
+  var width = 1600,
+      height = 1200
   
   // append the svg object to the body of the page
   var svg = d3.select("#node-graph")
@@ -291,51 +292,126 @@
     nodes : [
       {
         "id": 1,
-        "name": "PhD research: COVID-19 diagnostics using aptamers",
-        "color": "#fbb4ae" 
+        "name": "researching aptamers for COVID-19 diagnostics",
+        "color": "#decbe4"
       },
       {
         "id": 2,
-        "name": "laser-cutting store",
-        "color": "#b3cde3"
+        "name": "processed COVID-19 tests in time of need (Mar-Jun '20)",
+        "color": "#decbe4"
       },
       {
         "id": 3,
-        "name": "Kendo Club",
-        "color": "#ccebc5"
+        "name": "publishing manuscript on SARS-CoV-2 -binding aptamers",
+        "color": "#decbe4"
       },
       {
         "id": 4,
-        "name": "Pokémon volunteering",
+        "name": "mentoring an undergrad researcher",
         "color": "#decbe4"
       },
       {
         "id": 5,
-        "name": "vector design",
-        "color": "#fed9a6"
+        "name": "designing figures featured in grants and publications",
+        "color": "#decbe4"
       },
       {
         "id": 6,
-        "name": "hospital COVID-19 testing volunteer",
-        "color": "#ffffcc"
+        "name": "invited Short Talk speaker at the 2021 OTS conference",
+        "color": "#decbe4"
       },
       {
         "id": 7,
-        "name": "financial support to little brother",
+        "name": "designing biology-themed merchandise",
+        "color": "#fbb4ae"
+      },
+      {
+        "id": 8,
+        "name": "mentoring a shop apprentice",
+        "color": "#fbb4ae"
+      },
+      {
+        "id": 9,
+        "name": "designing card game tokens",
+        "color": "#fbb4ae"
+      },
+      {
+        "id": 10,
+        "name": "handling customer interactions",
+        "color": "#fbb4ae"
+      },
+      {
+        "id": 11,
+        "name": "designing LED-lit prop swords",
+        "color": "#fbb4ae"
+      },
+      {
+        "id": 12,
+        "name": "founding a successful online shop featuring laser-cut merch",
+        "color": "#fbb4ae"
+      },   
+      {
+        "id": 13,
+        "name": "hosting local card & video game events open to all",
+        "color": "#b3cde3"
+      },
+      {
+        "id": 14,
+        "name": "staffing official tournaments across the US and online",
+        "color": "#b3cde3"
+      },
+      {
+        "id": 15,
+        "name": "achieved highest rank in volunteer program (Professor Program)",
+        "color": "#b3cde3"
+      },
+      {
+        "id": 16,
+        "name": "mentoring new volunteer judges and organizers",
+        "color": "#b3cde3"
+      },
+      {
+        "id": 17,
+        "name": "presented in official training videos (Pokémon University)",
+        "color": "#b3cde3"
+      },
+      {
+        "id": 19,
+        "name": "teaching kendo and iaido to new students",
+        "color": "#fed9a6"
+      },
+      {
+        "id": 20,
+        "name": "crafting Dawg Daze freebies and generating graphics",
+        "color": "#fed9a6"
+      },
+      {
+        "id": 21,
+        "name": "achieving rank of 3-kyu in kendo and iaido",
+        "color": "#fed9a6"
+      },
+      {
+        "id": 22,
+        "name": "aquascaping (aesthetics-focused fishkeeping)",
         "color": "#e5d8bd"
+      },
+      {
+        "id": 23,
+        "name": "led problem-solving sessions and graded for UW class",
+        "color": "#decbe4"
       },
     ],
     links : [
       {
-        "source": 1,
+        "source": 1, //research
         "target": 2
       },
       {
-        "source": 2,
+        "source": 1,
         "target": 3
       },
       {
-        "source": 3,
+        "source": 1,
         "target": 4
       },
       {
@@ -343,47 +419,195 @@
         "target": 5
       },
       {
+        "source": 1,
+        "target": 6
+      },
+      {
+        "source": 3,
+        "target": 5
+      },
+      {
+        "source": 3,
+        "target": 6
+      },      
+      {
         "source": 5,
-        "target": 2
+        "target": 6
       },
       {
-        "source": 2,
-        "target": 1
+        "source": 1,  // lasercut
+        "target": 7
+      },
+      {
+        "source": 4,
+        "target": 8
       },
       {
         "source": 5,
-        "target": 3
-      },
-      {
-        "source": 2,
-        "target": 4
-      },
-      {
-        "source": 2,
-        "target": 1
+        "target": 7
       },
       {
         "source": 7,
-        "target": 1
+        "target": 9
       },
       {
-        "source": 2,
-        "target": 7
+        "source": 7,
+        "target": 12
+      },
+      {
+        "source": 8,
+        "target": 10
       },      
       {
-        "source": 1,
-        "target": 4
-      },   
+        "source": 8,
+        "target": 12
+      },
+      {
+        "source": 9,
+        "target": 12
+      },
+      {
+        "source": 10,
+        "target": 12
+      },
+      {
+        "source": 11,
+        "target": 12
+      },
+      {
+        "source": 8,
+        "target": 10
+      },    
+      {
+        "source": 13, // pokemon
+        "target": 14
+      },
+      {
+        "source": 13,
+        "target": 15
+      },
+      {
+        "source": 13,
+        "target": 16
+      },
+      {
+        "source": 13,
+        "target": 17
+      },
+      {
+        "source": 14,
+        "target": 15
+      },
+      {
+        "source": 14,
+        "target": 16
+      },      
+      {
+        "source": 14,
+        "target": 17
+      },
+      {
+        "source": 15,
+        "target": 16
+      },
+      {
+        "source": 15,
+        "target": 17
+      },
+      {
+        "source": 8,
+        "target": 16
+      }, 
+      {
+        "source": 4,
+        "target": 16
+      }, 
       {
         "source": 6,
-        "target": 1
-      }
+        "target": 17
+      }, 
+      {
+        "source": 9,
+        "target": 13
+      }, 
+      {
+        "source": 10,
+        "target": 13
+      }, 
+      {
+        "source": 10,
+        "target": 14
+      }, 
+      {
+        "source": 13,
+        "target": 14
+      }, 
+      {
+        "source": 19, //kendo
+        "target": 20
+      },
+      {
+        "source": 19,
+        "target": 21
+      }, 
+      {
+        "source": 4,
+        "target": 19
+      }, 
+      {
+        "source": 8,
+        "target": 19
+      },
+      {
+        "source": 13,
+        "target": 19
+      }, 
+      {
+        "source": 16,
+        "target": 19
+      }, 
+      {
+        "source": 5,
+        "target": 20
+      }, 
+      {
+        "source": 7,
+        "target": 20
+      }, 
+      {
+        "source": 9,
+        "target": 20
+      }, 
+      {
+        "source": 11,
+        "target": 21
+      }, 
+      {
+        "source": 7,
+        "target": 22
+      }, 
+      {
+        "source": 1,
+        "target": 23
+      }, 
+      {
+        "source": 4,
+        "target": 23
+      }, 
+      {
+        "source": 8,
+        "target": 23
+      }, 
+      {
+        "source": 16,
+        "target": 23
+      }, 
     ]
   }
   
   var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
-    .force("charge", d3.forceManyBody().strength(-8000))
+    .force("charge", d3.forceManyBody().strength(-3500))
     .force("center", d3.forceCenter(width / 2, height / 2));
   
   var link = svg.append("g")
@@ -401,10 +625,11 @@
     .data(data.nodes)
     .enter()
     .append("g")
-    .attr("text-anchor", "middle");
+    .attr("text-anchor", "middle")
+    .attr("text-align", "center");
   
   var circles = node.append("circle")
-    .attr("r", 50)
+    .attr("r", 70)
     .attr("fill", node => node.color);
   
   // Create a drag handler and append it to the node object instead
@@ -416,7 +641,9 @@
   drag_handler(node);
   
   var label = node.append("text")
-    .text(node => node.name);
+    .text(node => node.name)
+    .call(wrap, 140);
+    
   
   simulation
       .nodes(data.nodes)
@@ -455,4 +682,29 @@
           return "translate(" + d.x + "," + d.y + ")";
         })
   }
+
+function wrap(text, width) {
+  text.each(function() {
+    var text = d3.select(this),
+    words = text.text().split(/\s+/).reverse(),
+    word,
+    line = [],
+    lineNumber = 1,
+    lineHeight = 1, // ems
+    y = text.attr("y"),
+    dy = parseFloat(text.attr("dy")) || 0,
+    tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+    while (word = words.pop()) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", (lineHeight + dy) + "em").text(word);
+      }
+    }
+  });
+}
+
 </script>
