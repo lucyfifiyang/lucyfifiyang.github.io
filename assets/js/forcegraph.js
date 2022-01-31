@@ -97,16 +97,19 @@ function ForceGraph({
   }
 
   function ticked() {
-    link
-      .attr("x1", d => d.source.x)
-      .attr("y1", d => d.source.y)
-      .attr("x2", d => d.target.x)
-      .attr("y2", d => d.target.y);
-
-    node
-      .attr("cx", d => d.x)
-      .attr("cy", d => d.y);
-  }
+      node
+          .attr("transform", function(d) {
+            d.x = Math.max(radius, Math.min(width - radius, d.x));
+            d.y = Math.max(radius, Math.min(width - radius, d.y));
+            return "translate(" + d.x + "," + d.y + ")";
+          })
+      
+      link
+          .attr("x1", function(d) { return d.source.x; })
+          .attr("y1", function(d) { return d.source.y; })
+          .attr("x2", function(d) { return d.target.x; })
+          .attr("y2", function(d) { return d.target.y; });
+    }
 
   function drag(simulation) {    
     function dragstarted(event) {

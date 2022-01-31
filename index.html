@@ -73,7 +73,7 @@
         <div class="row text-center">
             <div class="col-md-12">
                 <h1 class="head-main">Lucy Yang</h1>
-                <h2 class="head-sub-main">Bioengineering PhD student, Pokemon Professor, and small business owner</h2>
+                <h2 class="head-sub-main">Bioengineering PhD candidate, Pok&eacute;mon Professor, and small business owner</h2>
                 <a class="btn btn-danger btn-lg " href="#intro">Read More</a>
                 <div class="head-last"></div>
 
@@ -91,9 +91,9 @@
 
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1>catchy title</h1>
+                    <h1>Nice to meet you, I'm Lucy!</h1>
                     <h4>
-                        <strong>Nice to meet you, I'm Lucy! I'm a fourth year PhD student in the Department of Bioengineering developing aptamers for COVID-19 diagnostics. When I'm away from the bench, I laser-cut products for my online store, cross swords at the kendo club at UW, and organize competitive Pok&eacute;mon events:
+                        <strong>I'm a fourth year PhD student in the Department of Bioengineering developing aptamers for COVID-19 diagnostics. When I'm away from the bench, I laser-cut products for my online store, cross swords at the kendo club at UW, and organize competitive Pok&eacute;mon events:
                         </strong>
                     </h4>
                 </div>
@@ -200,14 +200,15 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1>Connecting the Dots</h1>
+                    <h1>Connecting the Dots, literally!</h1>
                     
                 </div>
 
             </div>
             <div class="row text-center">
-                <h4>Drag and drop the nodes to see how they connect!</h4>
+                <svg id="my_dataviz" height=100 width=1000></svg>
                 <div id="node-graph"></div>
+                <h4>Drag and drop the nodes to see how they connect!</h4>
             </div>
 
 
@@ -260,7 +261,7 @@
     <!--End Pricing Section -->
     <!--footer Section -->
     <div class="for-full-back " id="footer">
-        Lucy Yang - template adapted and heavily modified from MoozThemes.com</a>
+        Template adapted and heavily modified from MoozThemes.com. Webgraph from Observable.</a>
          
     </div>
     <!--End footer Section -->
@@ -279,8 +280,10 @@
     <script src="assets/js/custom.js"></script>
 
 <script>
-  var width = 1600,
-      height = 1200
+  var width = d3.select("#node-graph").node().getBoundingClientRect().width,
+      height = 1200,
+      radius = 70;
+  
   
   // append the svg object to the body of the page
   var svg = d3.select("#node-graph")
@@ -298,7 +301,7 @@
       {
         "id": 2,
         "name": "processed COVID-19 tests in time of need (Mar-Jun '20)",
-        "color": "#decbe4"
+        "color": "#b3cde3"
       },
       {
         "id": 3,
@@ -307,73 +310,73 @@
       },
       {
         "id": 4,
-        "name": "mentoring an undergrad researcher",
-        "color": "#decbe4"
+        "name": "mentoring my undergrad researcher",
+        "color": "#fbb4ae"
       },
       {
         "id": 5,
         "name": "designing figures featured in grants and publications",
-        "color": "#decbe4"
+        "color": "#e6f5c9"
       },
       {
         "id": 6,
         "name": "invited Short Talk speaker at the 2021 OTS conference",
-        "color": "#decbe4"
+        "color": "#fbb4ae"
       },
       {
         "id": 7,
         "name": "designing biology-themed merchandise",
-        "color": "#fbb4ae"
+        "color": "#e6f5c9"
       },
       {
         "id": 8,
-        "name": "mentoring a shop apprentice",
+        "name": "mentoring my laser-cutting shop apprentice",
         "color": "#fbb4ae"
       },
       {
         "id": 9,
-        "name": "designing card game tokens",
-        "color": "#fbb4ae"
+        "name": "designing tokens and accessories for card games",
+        "color": "#e6f5c9"
       },
       {
         "id": 10,
-        "name": "handling customer interactions",
-        "color": "#fbb4ae"
+        "name": "maintaining excellent customer service with 2400+ 5-star reviews",
+        "color": "#fed9a6"
       },
       {
         "id": 11,
-        "name": "designing LED-lit prop swords",
-        "color": "#fbb4ae"
+        "name": "designing LED-lit prop swords for costuming",
+        "color": "#e6f5c9"
       },
       {
         "id": 12,
-        "name": "founding a successful online shop featuring laser-cut merch",
-        "color": "#fbb4ae"
+        "name": "founded online store featuring laser-cut merch",
+        "color": "#b3cde3"
       },   
       {
         "id": 13,
-        "name": "hosting local card & video game events open to all",
-        "color": "#b3cde3"
+        "name": "hosting learn-to-play Pokémon events open to all",
+        "color": "#fed9a6"
       },
       {
         "id": 14,
-        "name": "staffing official tournaments across the US and online",
-        "color": "#b3cde3"
+        "name": "staffing Pokémon events across the US and online",
+        "color": "#fed9a6"
       },
       {
         "id": 15,
-        "name": "achieved highest rank in volunteer program (Professor Program)",
+        "name": "initiated local Seattle Pokémon video game events",
         "color": "#b3cde3"
       },
       {
         "id": 16,
-        "name": "mentoring new volunteer judges and organizers",
-        "color": "#b3cde3"
+        "name": "mentoring new Pokémon volunteer organizers & judges",
+        "color": "#fbb4ae"
       },
       {
         "id": 17,
-        "name": "presented in official training videos (Pokémon University)",
-        "color": "#b3cde3"
+        "name": "presented in 7 official training videos (Pokémon University)",
+        "color": "#fbb4ae"
       },
       {
         "id": 19,
@@ -383,23 +386,29 @@
       {
         "id": 20,
         "name": "crafting Dawg Daze freebies and generating graphics",
-        "color": "#fed9a6"
+        "color": "#e6f5c9"
       },
       {
         "id": 21,
         "name": "achieving rank of 3-kyu in kendo and iaido",
-        "color": "#fed9a6"
+        "color": "#decbe4"
       },
       {
         "id": 22,
         "name": "aquascaping (aesthetics-focused fishkeeping)",
-        "color": "#e5d8bd"
+        "color": "#decbe4"
       },
       {
         "id": 23,
-        "name": "led problem-solving sessions and graded for UW class",
-        "color": "#decbe4"
+        "name": "led problem-solving sessions as Grader for class",
+        "color": "#fed9a6"
       },
+      {
+        "id": 24,
+        "name": "sewing and alterations for kendo uniforms and costuming",
+        "color": "#e6f5c9"
+      },
+
     ],
     links : [
       {
@@ -602,12 +611,20 @@
         "source": 16,
         "target": 23
       }, 
+      {
+        "source": 11,
+        "target": 24
+      }, 
+      {
+        "source": 19,
+        "target": 24
+      }, 
     ]
   }
   
   var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
-    .force("charge", d3.forceManyBody().strength(-3500))
+    .force("charge", d3.forceManyBody().strength(-3000))
     .force("center", d3.forceCenter(width / 2, height / 2));
   
   var link = svg.append("g")
@@ -629,7 +646,7 @@
     .attr("text-align", "center");
   
   var circles = node.append("circle")
-    .attr("r", 70)
+    .attr("r", radius)
     .attr("fill", node => node.color);
   
   // Create a drag handler and append it to the node object instead
@@ -671,17 +688,19 @@
 
   // This function is run at each iteration of the force algorithm, updating the nodes position.
   function ticked() {
-    link
-        .attr("x1", function(d) { return d.source.x; })
-        .attr("y1", function(d) { return d.source.y; })
-        .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });
-
-    node
-        .attr("transform", function(d) {
-          return "translate(" + d.x + "," + d.y + ")";
-        })
-  }
+        node
+            .attr("transform", function(d) {
+              d.x = Math.max(radius, Math.min(width - radius, d.x));
+              d.y = Math.max(radius, Math.min(width - radius, d.y));
+              return "translate(" + d.x + "," + d.y + ")";
+            })
+        
+        link
+            .attr("x1", function(d) { return d.source.x; })
+            .attr("y1", function(d) { return d.source.y; })
+            .attr("x2", function(d) { return d.target.x; })
+            .attr("y2", function(d) { return d.target.y; });
+      }
 
 function wrap(text, width) {
   text.each(function() {
@@ -707,4 +726,25 @@ function wrap(text, width) {
   });
 }
 
+// select the svg area
+var svg = d3.select("#my_dataviz")
+
+// Handmade legend
+svg.append("circle").attr("cx",60).attr("cy",20).attr("r", 6).style("fill", "#e6f5c9")
+svg.append("circle").attr("cx",220).attr("cy",90).attr("r", 6).style("fill", "#decbe4")
+svg.append("circle").attr("cx",310).attr("cy",20).attr("r", 6).style("fill", "#fed9a6")
+svg.append("circle").attr("cx",550).attr("cy",90).attr("r", 6).style("fill", "#fbb4ae")
+svg.append("circle").attr("cx",730).attr("cy",20).attr("r", 6).style("fill", "#b3cde3")
+svg.append("text").attr("x", 80).attr("y", 20).text("Connect the Dots").style("font-size", "20px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 240).attr("y", 90).text("Discovery Mindset").style("font-size", "20px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 330).attr("y", 20).text("Commitment to Inclusive Community").style("font-size", "20px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 570).attr("y", 90).text("Capacity for Leadership").style("font-size", "20px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 750).attr("y", 20).text("Ready for What Is Next").style("font-size", "20px").attr("alignment-baseline","middle")
+
 </script>
+
+
+
+
+</script>
+
