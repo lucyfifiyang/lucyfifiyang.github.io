@@ -51,6 +51,12 @@ h4 {
     text-align:justify;
 }
 
+h6 { /*==used in last parallax image*/
+    font-size:30px;
+    line-height:40px;
+    padding-bottom:40px;
+}
+
 p {
     font-weight:300;
     line-height:30px;
@@ -230,9 +236,89 @@ background-repeat: no-repeat;
 background-position: center 0;
 background-size: cover;
 background-attachment: fixed;
-min-height:300px;
+min-height:600px;
 }
 .for-parallax-two {
+    
+    color:#fff;
+    padding:40px 20px 40px 20px;
+    font-size:25px;
+}
+
+#Parallax-three {
+    background-image: url("../img/4.jpg");
+padding: 0;
+background-repeat: no-repeat;
+background-position: center 0;
+background-size: cover;
+background-attachment: fixed;
+min-height:600px;
+}
+.for-parallax-three {
+    
+    color:#fff;
+    padding:40px 20px 40px 20px;
+    font-size:25px;
+}
+
+#Parallax-four {
+    background-image: url("../img/5.jpg");
+padding: 0;
+background-repeat: no-repeat;
+background-position: center 0;
+background-size: cover;
+background-attachment: fixed;
+min-height:600px;
+}
+.for-parallax-four {
+    
+    color:#fff;
+    padding:40px 20px 40px 20px;
+    font-size:25px;
+}
+
+#Parallax-five {
+    background-image: url("../img/6.jpg");
+padding: 0;
+background-repeat: no-repeat;
+background-position: center 0;
+background-size: cover;
+background-attachment: fixed;
+min-height:600px;
+}
+.for-parallax-five {
+    
+    color:#fff;
+    padding:40px 20px 40px 20px;
+    font-size:25px;
+}
+
+#Parallax-six {
+    background-image: url("../img/7.jpg");
+padding: 0;
+background-repeat: no-repeat;
+background-position: center 0;
+background-size: cover;
+background-attachment: fixed;
+min-height:600px;
+}
+.for-parallax-six {
+    
+    color:#fff;
+    padding:40px 20px 40px 20px;
+    font-size:25px;
+}
+
+#Parallax-seven {
+    background-image: url("../img/8.jpg");
+padding: 0;
+background-repeat: no-repeat;
+background-position: center 0;
+background-size: cover;
+background-attachment: fixed;
+min-height:600px;
+}
+.for-parallax-seven {
     
     color:#fff;
     padding:40px 20px 40px 20px;
